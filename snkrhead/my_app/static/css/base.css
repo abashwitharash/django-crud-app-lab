@@ -21,6 +21,7 @@ html {
   }
   
   body {
+    background-color: #edd4a4;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -29,8 +30,8 @@ html {
       'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
       'Helvetica Neue', sans-serif;
     min-height: 100vh;
-    --nav-bg: rgba(104, 197, 248, 0.7);
-    --nav-bg-ff: rgba(104, 197, 248, 0.9);
+    --nav-bg: rgba(160, 203, 232, 0.7);
+    --nav-bg-ff: rgba(34, 87, 122, 0.7);
     --borders: rgb(36, 116, 248) solid 2px;
     --text-color: rgb(17, 20, 17);
     --link-hover-color: rgb(16, 56, 158);
