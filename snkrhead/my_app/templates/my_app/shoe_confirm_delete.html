@@ -1,0 +1,18 @@
+{% extends 'base.html' %}  
+{% load static %} 
+{% block content %}
+
+<div class="page-header">
+  <h1>Delete Shoe?</h1>
+  <img/>
+</div>
+
+<h2>Are you sure you want to delete {{ shoe.name }}?</h2>
+
+<form action="" method="post" enctype="multipart/form-data" class="form">
+  {% csrf_token %}
+  <a href="{% url 'snkr-detail' shoe.id %}" class="btn secondary">Cancel</a>
+  <button type="submit" class="btn danger">Yes - Delete!</button>
+</form>
+
+{% endblock %}

@@ -18,6 +18,11 @@
       <h2 class="card-title">{{ shoe.name }}</h2>
       <h2><strong>${{ shoe.amount }}</strong></h2>
       <h2>{{ shoe.description }}</h2>
+
+      <div class="shoe-actions">
+        <a href="{% url 'snkr-update' shoe.id %}" class="btn warn">Edit</a>
+        <a href="{% url 'snkr-delete' shoe.id %}" class="btn danger">Delete</a>
+      </div>
     </div>
   </div>
 </section>
