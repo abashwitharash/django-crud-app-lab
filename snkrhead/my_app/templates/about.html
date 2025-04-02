@@ -1,8 +1,30 @@
-{% extends 'base.html' %} 
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'css/about.css' %}" />
+{% endblock %}
+
 {% block content %}
-<h1>About the SNKRHEAD</h1>
-<hr />
-<p class="page-content">
-I love Air Jordans personally, but I would say my favorite is the 'Jarritos' Dunks.
-</p>
+
+<section class="about-hero">
+  <h1>👟 SNKRHEAD LIFE 👟</h1>
+  <p class="tagline">For the love of soles, stories & street heat.</p>
+  <hr />
+</section>
+
+<section class="about-content">
+  <div class="about-text">
+    <h2>Who’s Behind the Heat?</h2>
+    <p>
+      I’m all about sneakers — the hype, the culture, the history. Nothing hits like a fresh pair of Air Jordans,
+      but if I had to choose a top pick, it’s gotta be the <strong>‘Jarritos’ Dunks</strong>. That colorway? 🔥.
+    </p>
+    <p>
+      SNKRHEAD isn’t just a site — it’s a tribute to every release drop, every campout, every story stitched into
+      a pair of kicks. You feel me?
+    </p>
+  </div>
+</section>
+
 {% endblock %}

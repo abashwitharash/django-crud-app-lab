@@ -17,7 +17,7 @@ html {
   /* resets font size to be 62.5% of the user preference - 
        in most browser configurations this will be 10px */
   :root {
-    font-size: 62.5%;
+    font-size: 65.5%;
   }
   
   body {
@@ -82,6 +82,10 @@ html {
     font-size: 16px;
   }
   
+  .site-footer {
+    font-size: 190px;
+  }
+
   nav a:hover {
     color: var(--link-hover-color);
   }
@@ -175,7 +179,7 @@ html {
     font-size: var(--font-reg);
   }
 
-  
+
   @media only screen and (min-width: 768px) {
     header {
       position: sticky;
@@ -284,4 +288,7 @@ html {
       }
     }
   }
-  
+
+
+
+
