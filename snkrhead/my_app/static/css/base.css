@@ -111,7 +111,7 @@ html {
   }
   
   .header-logo-container img {
-    height: 100px; 
+    height: 170px; 
     width: auto;
   }
 
@@ -196,7 +196,7 @@ html {
   
     nav,
     .header-logo-container {
-      margin: 10px 0;
+      margin: 100px 0;
       padding: 0 15px;
     }
   
@@ -268,9 +268,8 @@ html {
     }
   
     .header-logo-container {
-      /* visual fix to help align logo */
-      padding-top: 6px;
-      width: 270px;
+      padding-top: 20px;
+      width: 200px;
       height: 70px;
     }
   
@@ -286,6 +285,12 @@ html {
         -webkit-backdrop-filter: blur(3px);
         backdrop-filter: blur(3px);
       }
+    }
+  }
+
+  @media only screen and (max-width: 700px) {
+    .header-logo-container {
+      display: none;
     }
   }
 

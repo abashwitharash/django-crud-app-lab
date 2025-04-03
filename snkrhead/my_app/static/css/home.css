@@ -29,7 +29,6 @@ main {
     animation: fadeIn 1.2s ease-out forwards;
   }
 
-  /* New video section */
 .highlight-video {
     width: 100%;
     display: flex;
