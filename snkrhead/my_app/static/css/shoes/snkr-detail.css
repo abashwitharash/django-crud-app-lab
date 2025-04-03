@@ -1,83 +1,138 @@
 .shoe-container {
-    padding: 35px 30px;
-    display: flex;
-    flex-direction: column;
+  padding: 35px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.shoe-img {
+  width: 75%;
+  max-width: 350px;
+}
+
+.usr-img {
+  width: 100%;
+  border-radius: var(--card-border-radius);
+}
+
+.shoe-details {
+  width: 98%;
+}
+
+.shoe-actions {
+  margin-top: 20px;
+}
+
+.cleanings-container {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  align-items: center;
+}
+
+.subsection-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.subsection-content {
+  margin: 0 8px;
+  font-size: 18px;
+}
+
+.shoe-details h1 {
+  font-size: var(--font-xxl);
+  margin: 15px 0 3px;
+}
+
+.shoe-details h2 {
+  font-size: var(--font-xl);
+  margin: 0 0 10px;
+}
+
+.shoe-details h3 {
+  margin: 20px 0 10px;
+  font-size: var(--font-l);
+}
+
+.shoe-details p {
+  font-size: var(--font-reg);
+  margin: 5px 0;
+}
+
+.cleanings-container > section {
+  width: 80%;
+  min-width: 360px;
+  border: var(--borders);
+  border-radius: var(--card-border-radius);
+  padding: 10px;
+  box-shadow: var(--card-box-shadow);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.cleanings h2 {
+  font-size: 3.2rem;
+  margin: 0;
+}
+
+.cleanings h3 {
+  font-size: var(--font-xl);
+  margin: 10px 0;
+}
+
+.cleanings table {
+  width: calc(100% - 16px);
+  text-align: left;
+  border-collapse: collapse;
+  margin: 0 8px;
+}
+
+.cleanings td {
+  padding: 8px 5px;
+  font-size: var(--font-reg);
+}
+
+.cleanings th {
+  font-size: var(--font-l);
+  padding: 5px 5px 0;
+  border-bottom: rgb(36, 116, 248) solid 2px;
+}
+
+.cleanings tr:nth-child(even) {
+  background-color: #f3f3fd;
+}
+
+@media only screen and (min-width: 768px) {
+  .shoe-container {
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
   }
-  
+
   .shoe-img {
-    width: 75%;
-    max-width: 350px;
+    width: 25%;
+    max-width: 250px;
+    margin-right: 25px;
   }
-  
-  .shoe-img img {
-    width: 100%;
-    border-radius: var(--card-border-radius);
+
+  .cleanings-container {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
   }
-  
-  .shoe-details {
-    width: 98%;
-    text-align: center;
+
+  .cleanings-container > section {
+    width: 45%;
   }
-  
-  .shoe-details h1 {
-    font-size: var(--font-xxl);
-    margin: 15px 0 3px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .cleanings-container {
+    padding: 0 40px;
   }
-  
-  .shoe-details h2 {
-    font-size: var(--font-xl);
-    margin: 0 0 10px;
-  }
-  
-  .shoe-details p {
-    font-size: var(--font-reg);
-    margin: 5px 0;
-  }
-  
-  .shoe-extra-info {
-    width: 80%;
-    min-width: 360px;
-    border: var(--borders);
-    border-radius: var(--card-border-radius);
-    padding: 10px;
-    box-shadow: var(--card-box-shadow);
-    margin-top: 20px;
-    text-align: left;
-  }
-  
-  .btn {
-    padding: 8px 16px;
-    margin-top: 15px;
-    background-color: var(--accent);
-    color: white;
-    border: none;
-    border-radius: var(--card-border-radius);
-    cursor: pointer;
-  }
-  
-  @media only screen and (min-width: 768px) {
-    .shoe-container {
-      flex-direction: row;
-      align-items: center;
-      justify-content: start;
-    }
-  
-    .shoe-img {
-      width: 25%;
-      max-width: 250px;
-      margin-right: 25px;
-    }
-  
-    .shoe-details {
-      text-align: left;
-    }
-  }
-  
-  @media only screen and (min-width: 1024px) {
-    .shoe-extra-info {
-      padding: 0 40px;
-    }
-  }
-  
+}

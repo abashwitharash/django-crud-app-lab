@@ -9,4 +9,5 @@ urlpatterns = [
     path('snkrs/create/', views.SnkrCreate.as_view(), name='snkr-create'),
     path('snkrs/<int:pk>/update/', views.SnkrUpdate.as_view(), name='snkr-update'),
     path('snkrs/<int:pk>/delete/', views.SnkrDelete.as_view(), name='snkr-delete'),
+    path('snkrs/<int:snkr_id>/add-cleaning/', views.add_cleaning, name='add-cleaning'),
 ]  

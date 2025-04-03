@@ -13,3 +13,14 @@ class Shoe(models.Model):
     
     def get_absolute_url(self):
         return reverse('snkr-detail', kwargs={'snkr_id': self.id}) 
+    
+class Cleaning(models.Model):
+        date = models.DateField('Date Cleaned')
+
+        shoe = models.ForeignKey(Shoe, on_delete=models.CASCADE)
+
+        def __str__(self):
+            return f"{self.date}"
+        
+        class Meta:
+             ordering = ['-date']
