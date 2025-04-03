@@ -14,7 +14,8 @@
   <div class="card">
     <div class="card-content shoe-details"> <!-- ✅ Wrapped in .shoe-details -->
       <div class="card-img-container">
-        <img src="{{ shoe.image.url }}" alt="{{ shoe.name }}" />
+        <img src="{{ shoe.image.url }}" alt="{{ shoe.name }}" class="use-img" />
+
       </div>
       <h2 class="card-title">{{ shoe.name }}</h2>
       <h2><strong>${{ shoe.amount }}</strong></h2>
